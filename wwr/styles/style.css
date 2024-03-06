@@ -74,6 +74,13 @@ nav a:hover {
     text-align: center;
 }
 
+/* Rates & Dates Heading on rates_dates.html */
+#rates_dates-msg h1 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
 .home-title {
     color: #0f5387;
     font-family: Josefin Slab, Helvetica, sans-serif;
@@ -103,6 +110,58 @@ main section {
 
 main section img {
     box-sizing: border-box;
+}
+
+#rates-dates-info {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 20px;
+    text-align: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    padding: 3rem;
+    background-color: #0f5387;
+    margin-bottom: -20px;
+}
+
+.trip-intro {
+    grid-column: 1 / -1;
+    margin-top: -10px;
+    color: white;
+}
+
+.image-container {
+    grid-row: 2 / span 2;
+}
+
+.red-wall-img {
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.trip-info {
+    grid-column: 2 / 3;
+    color: white;
+}
+
+.trip-intro h3 {
+    color: #ffffff;
+}
+
+.trip-info p {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 3rem;
+    margin-top: auto;
+    margin-bottom: 4rem;
+    margin: 2rem;
+    text-align: left;
 }
 
 #background {
