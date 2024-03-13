@@ -136,14 +136,15 @@ main section img {
 
 .image-container {
     grid-row: 2 / span 2;
+    width: 100%;
 }
 
 .red-wall-img {
-    width: 600px;
-    height: 600px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
+    max-width: 600px;
 }
 
 .trip-info {
@@ -373,44 +374,52 @@ footer .social img {
 }
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+
+    #hero {
         display: block;
         height: auto;
-    }
-    nav, footer {
-        flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-    #hero {
         margin-top: 0;
     }
+
+    nav, footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 15px;
+    }
+
     #hero-msg {
         margin-top: 0;
     }
+
     #hero-msg h4 {
         display: none;
     }
+
     #hero-msg h1 {
-        color: #6f7364;
+        color: #6f7364; 
     }
+
     .home-title {
         font-size: 25px;
     }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
+
+    #rates-dates-info {
+        grid-template-columns: 1fr;
     }
-    #background {
-        display: none;
-    }
-    .mountains, .msg {
+
+    .rivers-card, .camping-card, .rapids-card {
+        margin: 50px auto; 
         width: 80%;
-        display: block;
-        margin: 0 auto;
     }
+
+    .mountains, .msg {
+        width: 80%; 
+        margin: 0 auto; 
+    }
+
     footer {
         margin-top: 25px;
     }
