@@ -252,46 +252,41 @@ body {
     transform: scale(1.2);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .header {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+      grid-template-columns: 1fr;
+      gap: 1rem;
     }
-    
+  
     .logo {
-        width: 70%;
-        height: auto;
+      width: 70%;
+      height: auto;
     }
-
+  
     .main-nav {
-        grid-column: 1;
-        justify-content: flex-start;
-        gap: 2rem;
+      flex-direction: column;
+      align-items: center;
     }
-
-    .work-section, .about-section, .skills-section {
-        width: 90%;
-        max-width: 90%;
-        height: auto;
-        padding: 1rem;
-        margin-bottom: 2rem;
+  
+    .work-section,
+    .about-section,
+    .skills-section {
+      width: 100%;
     }
-
-    .work-link img {
-        max-width: 100%;
-    }
-
+  
     .about-text {
-        max-width: 100%;
+      padding: 1rem;
     }
-
-    .skills-grid {
-        gap: 1rem;
+  
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 25px;
     }
-
+  
     .footer-container {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
     }
-}
+  }
