@@ -11,7 +11,7 @@
 body {
   background-color: #ffffff;
   color: #0e1029;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: var(--paragraph-font);
 }
 
@@ -25,6 +25,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
   align-items: center;
+  gap: auto;
   max-width: 2560px;
   background-color: #1f2041;
 }
@@ -62,19 +63,16 @@ body {
   background-image: url(https://th.bing.com/th/id/OIG1.T1aFiQdj04ZHqC8wYhad?w=1024&h=1024&rs=1&pid=ImgDetMain);
   display: flex;
   justify-content: center;
-  align-items: center;
+  max-width: 2560px;
   gap: 2rem;
-  padding: 2rem;
-  margin: 1rem;
+  padding: 3rem;
 }
 
 .work-section, .about-section, .skills-section {
   background-color: #1f2041;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 50.9375rem;
-  width: 40rem;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 80%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -84,7 +82,7 @@ body {
 
 .work-title, .about-title, .skills-title {
   color: #5794ff;
-  font-weight: 700;
+  max-width: 2560px;
   margin-bottom: 1rem;
   text-align: center;
   font-family: var(--heading-font);
@@ -97,13 +95,11 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1rem;
 }
 
 .work-link img {
-  width: 15.625rem;
   height: auto;
-  max-width: 100%;
+  max-width: 150px;
 }
 
 .work-item-title {
@@ -119,16 +115,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .about-text {
-  max-width: 50rem;
+  margin: 0 auto;
+  max-width: 2560px;
   text-align: center;
   color: #ffffff;
-  padding: 0 1rem;
-  margin-top: 1rem;
-  line-height: 1.6;
   font-family: var(--paragraph-font);
 }
 
@@ -137,35 +131,12 @@ body {
   background-color: #1f2041;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 .skills-title {
   color: #5794ff;
-  font-weight: 700;
   margin-bottom: 1rem;
-}
-
-.skills-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.skill-icon {
-  width: 3.75rem;
-  height: 3.75rem;
-  object-fit: cover;
 }
 
 .skill-name {
@@ -222,7 +193,6 @@ body {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
   bottom: 0;
   left: 0;
   background-color: #5794ff;
@@ -258,70 +228,6 @@ body {
 
 @media (max-width: 768px) {
   body {
-    font-size: 1rem;
-  }
-
-  .header {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    align-items: center;
-    padding: 0.5rem;
-  }
-
-  .main-nav {
-    grid-column: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .logo {
-    width: 100px;
-    height: 100px;
-  }
-
-  .main-content {
-    flex-direction: column;
-    padding: 1rem;
-    margin: 0.5rem;
-  }
-
-  .work-section,
-  .about-section,
-  .skills-section {
-    width: 100%;
-    height: auto;
-    padding: 1rem;
-    border-radius: 0;
-    box-shadow: none;
-    margin-bottom: 1rem;
-  }
-
-  .work-link img {
-    width: 100%;
-    height: auto;
-  }
-
-  .about-text {
-    max-width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-  }
-
-  .footer {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    align-items: center;
-    padding: 2rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
     font-size: 0.8rem;
   }
 
@@ -338,11 +244,9 @@ body {
     margin: 0 auto;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "logo" "nav";
   }
 
   .main-nav {
-    grid-area: nav;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -357,7 +261,6 @@ body {
   .logo {
     grid-area: logo;
     width: 80px;
-    height: 80px;
   }
 
   .main-content {
@@ -371,22 +274,10 @@ body {
   .skills-section {
     width: 100%;
     height: auto;
-    padding: 1rem 0.5rem; /* Reduced horizontal padding */
+    padding: 1rem 0.5rem;
     border-radius: 0;
     box-shadow: none;
     margin-bottom: 0.5rem;
-  }
-
-  .work-link img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .about-text {
-    max-width: 100%;
-    padding: 0.25rem;
-    margin-top: 0.25rem;
-    line-height: normal;
   }
 
   .footer {
