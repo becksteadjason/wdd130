@@ -1,29 +1,35 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
+/* Define global variables */
 :root {
   --heading-font: "Roboto", "Open Sans", sans-serif;
   --paragraph-font: "Lato", "PT Sans", sans-serif;
 }
 
+/* Global box-sizing */
 * {
   box-sizing: border-box;
 }
 
+/* Body styles */
 body {
   background-color: #ffffff;
   font-size: 1rem;
   font-family: var(--paragraph-font);
 }
 
+/* Logo styles */
 .logo {
   display: block;
   max-width: 200px;
   margin: 2rem;
 }
 
+/* Header styles */
 .header {
   display: grid;
   grid-template-columns: 150px auto;
@@ -31,10 +37,12 @@ body {
   background-color: #1f2041;
 }
 
+/* Logo link styles */
 a.logo-link {
   width: 60%;
 }
 
+/* Navigation styles */
 nav.main-nav {
   display: flex;
   align-items: center;
@@ -43,6 +51,7 @@ nav.main-nav {
   gap: 2rem;
 }
 
+/* Navigation link styles */
 .nav-link {
   color: #ffffff;
   text-decoration: none;
@@ -58,6 +67,7 @@ nav.main-nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Main content styles */
 .main-content {
   background-image: url(https://th.bing.com/th/id/OIG1.T1aFiQdj04ZHqC8wYhad?w=1024&h=1024&rs=1&pid=ImgDetMain);
   background-repeat: no-repeat;
@@ -70,25 +80,31 @@ nav.main-nav {
   column-gap: 2rem;
 }
 
-p, .work-link {
+/* Paragraph and work-link styles */
+p,
+.work-link {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
+/* Heading styles */
 h2 {
   display: block;
   font-size: 1.5em;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
   font-weight: bold;
 }
 
-.work-section, .about-section, .skills-section {
+/* Section styles */
+.work-section,
+.about-section,
+.skills-section {
   background-color: #1f2041;
   margin: 0 auto;
   border-radius: 10px;
@@ -100,7 +116,10 @@ h2 {
   padding: 2rem;
 }
 
-.work-title, .about-title, .skills-title {
+/* Section title styles */
+.work-title,
+.about-title,
+.skills-title {
   color: #5794ff;
   max-width: 2560px;
   margin-bottom: 1rem;
@@ -108,6 +127,7 @@ h2 {
   font-family: var(--heading-font);
 }
 
+/* Work link styles */
 .work-link {
   text-decoration: none;
   color: #ffffff;
@@ -120,14 +140,17 @@ h2 {
   max-width: 150px;
 }
 
+/* Work item title styles */
 .work-item-title {
   font-weight: 600;
 }
 
+/* Work description styles */
 .work-description {
   text-align: center;
 }
 
+/* Individual section styles */
 .work-section {
   grid-column: 1/5;
   grid-row: 1/5;
@@ -160,7 +183,7 @@ h2 {
   font-family: var(--paragraph-font);
 }
 
-/* Skills section */
+/* Skills section styles */
 .skills-section {
   grid-column: 9/13;
   grid-row: 1/5;
@@ -184,10 +207,12 @@ h2 {
   transform: scale(1.1);
 }
 
-.skill-name:hover, .work-link:hover {
+.skill-name:hover,
+.work-link:hover {
   color: #5794ff;
 }
 
+/* Footer styles */
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -249,6 +274,7 @@ h2 {
   color: #5794ff;
 }
 
+/* Social links */
 .social-links {
   display: flex;
   justify-content: center;
@@ -276,6 +302,7 @@ h2 {
   transform: scale(1.2);
 }
 
+/* Media queries for responsive design */
 @media (max-width: 768px) {
   body {
     font-size: 0.9rem;
