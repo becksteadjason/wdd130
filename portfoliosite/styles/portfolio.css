@@ -198,7 +198,7 @@ h2 {
   color: #e7ecef;
   margin: 0 auto;
   margin-top: 5rem;
-  max-width: 100%;
+  max-width: 2560px;
 }
 
 .footer-container {
@@ -296,15 +296,16 @@ h2 {
   }
 
   .main-nav {
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
     margin: 0.5rem 0;
   }
 
   .nav-link {
-    width: auto;
-    padding: 0.8rem 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
   }
 
   .logo {
