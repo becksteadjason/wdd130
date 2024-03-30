@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/portfolio.css">
+    <script src="styles/work.js"></script>
     <title>Jason Beckstead | Work</title>
 </head>
 <body>
@@ -20,49 +21,27 @@
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
         </header>
-
-        <!-- Main content area with sections for recent work and portfolio -->
-        <main class="main-content">
-            <section class="recent-work">
-                <h2 class="work-title">Recent Work</h2>
-                <!-- Add content for recent work here -->
-            </section>
-            <section class="portfolio">
-                <div class="portfolio-container">
-                    <div class="portfolio-item">
-                        <a href="https://becksteadjason.github.io/wdd130/wwr/index.html" target="_blank" aria-label="View Aqua Adrenaline project">
-                            <img src="images/Aqua_Adrenaline.png" alt="Aqua Adrenaline Project Image">
-                            <p class="portfolio-title">Aqua Adrenaline</p>
-                            <p>
-                                Project One Title: "Aqua Adrenaline"
-                              </p>
-                              <p>
-                                Description: "In my Web Fundamentals (WDD130) course at BYU-Idaho, I gained hands-on experience with HTML and CSS by creating a prototype website. 
-                                This project involved translating a wireframe into a functional website, allowing me to apply the theoretical knowledge I had learned in class to 
-                                a practical scenario. Building the website from scratch challenged me to understand the interplay between HTML structure and CSS styling, solidifying 
-                                my grasp of these fundamental web development concepts."
-                              </p>
-                              <p>
-                                "Technologies Used: HTML, CSS, Wireframes"
-                              </p>
-                        </a>
-                    </div>
-                    <div class="portfolio-item">
-                        <!-- <a href="#" aria-label="Future Projects"> -->
-                            <img src="https://th.bing.com/th/id/OIG4.IcwzDo3CI5b67RHAYdKw?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Future Projects">
-                            <p class="portfolio-title">Future Projects</p>
-                        <!-- </a> -->
-                    </div>
-                    <!-- <div class="portfolio-item">
-                        <a href="#" aria-label="View Project 3 project">
-                            <img src="project-image-3.jpg" alt="Project 3 Image">
-                            <p class="portfolio-title">Project 3 Title</p>
-                        </a>
-                    </div> -->
+        <main>
+            <h2 class="project-heading">My Projects</h2> <div class="slideshow-container">
+              <div class="mySlides fade">
+                <div class="text">
+                  <a href="https://becksteadjason.github.io/wdd130/wwr/index.html" id="aqua" target="_blank">Aqua Adrenaline</a>
                 </div>
-            </section>
-        </main>
-
+                <img src="images/Aqua_Adrenaline.png" style="width: 50%;">
+              </div>
+              <div class="mySlides fade">
+                <div class="image-container">
+                  <img src="https://th.bing.com/th/id/OIG4.IcwzDo3CI5b67RHAYdKw?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Future Projects" style="width: 50%;">
+                </div>
+                <div class="text">Future Projects</div>
+                <div class="numbertext">2 / 2</div>
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+          </main>
         <!-- Footer section with copyright, email, and social links -->
         <footer class="footer">
             <div class="footer-container">
