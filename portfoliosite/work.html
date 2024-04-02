@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Beckstead - Projects</title>
     <link rel="stylesheet" href="styles/portfolio.css">
     <script src="styles/work.js"></script>
-    <title>Jason Beckstead | Work</title>
 </head>
 <body>
     <div id="content">
@@ -14,20 +14,23 @@
             <a href="index.html" class="logo-link" aria-label="Go to homepage">
                 <img class="logo" src="images/JasonBecksteadLogo.jpg" alt="Jason Beckstead Logo">
             </a>
-            <nav class="main-nav">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="work.html" class="nav-link" aria-current="page">My Work</a>
-                <a href="aboutme.html" class="nav-link">About Me</a>                
-                <a href="contact.html" class="nav-link">Contact</a>
+            <nav class="navbar" aria-label="Main Navigation">
+              <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="work.html" class="nav-link" aria-current="page">My Work</a></li>
+                <li><a href="aboutme.html" class="nav-link">About Me</a></li>                
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul> 
             </nav>
         </header>
         <main>
-            <h2 class="project-heading">My Projects</h2> <div class="slideshow-container">
+            <h1 class="project-heading">My Projects</h1> 
+            <div class="slideshow-container">
               <div class="mySlides fade">
                 <div class="text">
                   <a href="https://becksteadjason.github.io/wdd130/wwr/index.html" id="aqua" target="_blank">Aqua Adrenaline</a>
                 </div>
-                <img src="images/Aqua_Adrenaline.png" style="width: 50%;">
+                <img src="images/Aqua_Adrenaline.png" style="width: 50%;" alt="Aqua Adrenaline logo - a stylized blue wave shape with the text 'AQUA ADRENALINE' in capital letters.">
               </div>
               <div class="mySlides fade">
                 <div class="image-container">
@@ -43,25 +46,25 @@
             <br>
           </main>
         <!-- Footer section with copyright, email, and social links -->
-        <footer class="footer">
-            <div class="footer-container">
-                <p>&copy; 2024 Jason Beckstead. All rights reserved.</p>
-                <a href="site-plan.html" target="_blank" class="site-plan" rel="noopener noreferrer">Site Plan</a>
-                <a href="mailto:becksteadjason2@gmail.com" class="email-link">becksteadjason2@gmail.com</a>
-                <div class="social-links" role="list">
-        <!-- The social media icons are a white color with a transparent background; they are not seen when the background is white -->
-                    <a href="https://www.facebook.com/profile.php?id=100008485966938" target="_blank" class="social-link" rel="noopener noreferrer" role="listitem" aria-label="Link to Facebook page">
-                        <img src="images/facebook-icon.png" alt="Facebook Icon">
-                    </a>
-                    <a href="https://www.linkedin.com/in/becksteadjason/" target="_blank" class="social-link" rel="noopener noreferrer" role="listitem" aria-label="Link to LinkedIn profile">
-                        <img src="images/linkedin-icon.png" alt="LinkedIn Icon">
-                    </a>
-                    <a href="https://www.instagram.com/beckstead.jason/" target="_blank" class="social-link" rel="noopener noreferrer" role="listitem" aria-label="Link to Instagram profile">
-                        <img src="images/instagram-icon.png" alt="Instagram Icon">
-                    </a>
-                </div>
-            </div>
-        </footer>
+        <footer class="footer" aria-label="Footer Section">
+          <div class="footer-container">
+              <p>&copy; 2024 Jason Beckstead. All rights reserved.</p>
+              <a href="site-plan.html" target="_blank" rel="noopener noreferrer">Site Plan</a>
+              <a href="mailto:becksteadjason2@gmail.com" class="email-link">becksteadjason2@gmail.com</a>
+              <div class="social-links" role="list" aria-label="Social Media Links">
+                  <!-- The social media icons are a white color with a transparent background; they are not seen when the background is white -->
+                  <a href="https://www.facebook.com/profile.php?id=100008485966938" target="_blank" class="social-link" rel="noopener noreferrer" aria-label="Link to Facebook page">
+                      <img src="images/facebook-icon.png" alt="Facebook Icon">
+                  </a>
+                  <a href="https://www.linkedin.com/in/becksteadjason/" target="_blank" class="social-link" rel="noopener noreferrer" aria-label="Link to LinkedIn profile">
+                      <img src="images/linkedin-icon.png" alt="LinkedIn Icon">
+                  </a>
+                  <a href="https://www.instagram.com/beckstead.jason/" target="_blank" class="social-link" rel="noopener noreferrer" aria-label="Link to Instagram profile">
+                      <img src="images/instagram-icon.png" alt="Instagram Icon">
+                  </a>
+              </div>
+          </div>
+      </footer>
     </div>
 </body>
 </html>

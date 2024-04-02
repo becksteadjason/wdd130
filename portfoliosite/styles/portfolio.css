@@ -20,52 +20,65 @@ body {
   background-color: #ffffff;
   font-size: 1em;
   font-family: var(--paragraph-font);
+  width: 100%;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+}
+
+p {
+  font-family: var(--paragraph-font);
 }
 
 /* Logo styles */
 .logo {
   display: block;
   max-width: 175px;
-  margin: 2rem;
+  margin: 1rem auto;
+}
+
+.logo-link {
+  display: inline-block; /* Changed from default 'inline' */
+  line-height: 0; /* Removes any extra vertical spacing */
 }
 
 /* Header styles */
 .header {
-  display: grid;
-  grid-template-columns: 150px auto;
-  max-width: 2560px;
   background-color: #1f2041;
-}
-
-/* Logo link styles */
-a.logo-link {
-  width: 60%;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Navigation styles */
-nav.main-nav {
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 1rem;
-  gap: 3rem;
-  font-size: 1.5em;
+  gap: 20px;
 }
 
-/* Navigation link styles */
-.nav-link {
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
   color: #ffffff;
   text-decoration: none;
-  padding: 1.5rem;
-  transition: all 0.3s ease-in-out;
-  font-weight: 600;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
-.nav-link:hover {
+.navbar a:hover {
   background-color: #5794ff;
-  color: #ffffff;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-heading {
@@ -201,8 +214,10 @@ nav.main-nav {
   grid-template-rows: repeat(4, 1fr);
   justify-content: space-around;
   max-width: 2560px;
-  padding: 1.8rem;
+  padding: 1.5rem;
   column-gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Paragraph and work-link styles */
@@ -239,6 +254,8 @@ h2 {
   flex-direction: column;
   display: flex;
   padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Section title styles */
@@ -349,6 +366,8 @@ h2 {
   margin: 0 auto;
   margin-top: 5rem;
   max-width: 2560px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-container {
@@ -442,9 +461,24 @@ h2 {
   }
 
   .header {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    padding: 0.5rem;
+    padding: 5px;
+  }
+
+  .logo {
+    max-width: 150px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar li {
+    margin: 5px;
+  }
+
+  .navbar a {
+    padding: 10px;
   }
 
   .slideshow-container {
@@ -512,18 +546,6 @@ h2 {
 .dot:hover {
     background-color: white;
 }
-  .main-nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 0.5rem 0;
-  }
-
-  .nav-link {
-    width: 100%;
-    text-align: center;
-    padding: 0.8rem;
-  }
 
   .logo {
     max-width: 120px;
