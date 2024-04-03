@@ -62,6 +62,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 20px;
+  font-weight: bold;
 }
 
 .navbar li {
@@ -81,130 +82,6 @@ p {
 
 .navbar a:hover {
   background-color: #5794ff;
-}
-
-.project-heading {
-  margin-top: 60px;
-  font-size: 24px;
-  text-align: center;
-  color: #1f2041;
-  font-weight: bold;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 90%;
-  position: relative;
-  margin: auto;
-  margin-top: 75px;
-  text-align: center;
-  background-color: #f5f5f5;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
-
-/* Hide all slides except the first one by default */
-.mySlides:not(:first-child) {
-  display: none;
-}
-
-/* Image container for centering */
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  overflow: hidden;
-}
-
-.image-container img {
-  height: auto;
-  width: 100%;
-  object-fit: cover;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  color: #ffffff;
-  background-color: #1f2041;
-  font-size: 24px;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
-
-/* Adjusted horizontal alignment of buttons */
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-/* On hover, add a slight color change */
-.prev:hover,
-.next:hover {
-  background-color: #5794ff;
-}
-
-/* Caption text */
-.text {
-  color: #ffffff;
-  background-color: #1f2041; 
-  font-size: 18px;
-  font-weight: bold;
-  padding: 1% 5%;
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: auto;
-  text-align: center;
-  border-radius: 5px;
-}
-
-/* Remove underline from text link */
-#aqua {
-  text-decoration: none;
-  color: #fff;
-}
-
-#aqua:hover {
-  color: #5794ff;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  display: none;
-}
-
-.active,
-.dot:hover {
-  background-color: #1f2041;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* Main content styles */
@@ -332,6 +209,130 @@ p,
 .skills-item img {
   max-width: 200px;
   margin-bottom: 1rem;
+}
+
+.project-heading {
+  margin-top: 60px;
+  font-size: 24px;
+  text-align: center;
+  color: #1f2041;
+  font-weight: bold;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+  margin-top: 75px;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Hide all slides except the first one by default */
+.mySlides:not(:first-child) {
+  display: none;
+}
+
+/* Image container for centering */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  overflow: hidden;
+}
+
+.image-container img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  color: #ffffff;
+  background-color: #1f2041;
+  font-size: 24px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Adjusted horizontal alignment of buttons */
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* On hover, add a slight color change */
+.prev:hover,
+.next:hover {
+  background-color: #5794ff;
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  background-color: #1f2041; 
+  font-size: 18px;
+  font-weight: bold;
+  padding: 1% 5%;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Remove underline from text link */
+#aqua {
+  text-decoration: none;
+  color: #fff;
+}
+
+#aqua:hover {
+  color: #5794ff;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  display: none;
+}
+
+.active,
+.dot:hover {
+  background-color: #1f2041;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Footer styles */
