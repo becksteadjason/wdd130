@@ -28,6 +28,7 @@ html {
   font-size: 2vw;
 }
 
+/* Heading font-family and font-sizes */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
 }
@@ -44,6 +45,7 @@ h3 {
   font-size: 1.17em;
 }
 
+/* Paragraph font-family */
 p {
   font-family: var(--paragraph-font);
 }
@@ -87,7 +89,6 @@ p {
 
 .navbar a {
   font-family: var(--heading-font);
-  font-size: 1rem;
   color: #ffffff;
   text-decoration: none;
   padding: 15px;
@@ -206,7 +207,6 @@ p {
 }
 
 .skill-name {
-  font-size: 1rem;
   color: #ffffff;
   margin-top: 0.5rem;
 }
@@ -225,10 +225,6 @@ p,
 .skills-item img {
   max-width: 50%;
   margin-bottom: 1rem;
-}
-
-.work-title, .about-title, .skills-title {
-  font-size: 1.5rem;
 }
 
 .project-heading {
@@ -317,7 +313,6 @@ p,
   position: absolute;
   color: #ffffff;
   background-color: rgba(31, 32, 65, 0.7);
-  font-size: 1rem;
   font-weight: bold;
   padding: 1% 5%;
   top: 0;
@@ -388,11 +383,9 @@ p,
 
 .title {
   color: #1f2041;
-  font-size: 18px;
 }
 
 .about {
-  font-size: 1rem;
   line-height: 1.6;
   text-align: left;
   max-width: 800px;
@@ -411,7 +404,6 @@ p,
   text-align: center;
   cursor: pointer;
   width: 100%;
-  font-size: 18px;
 }
 
 .button:hover, a:hover {
