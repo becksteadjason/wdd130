@@ -18,7 +18,6 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
 
@@ -30,14 +29,14 @@ function showSlides(n) {
   }
 
   // Hide all slides
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
+  Array.prototype.forEach.call(slides, function(slide) {
+    slide.style.display = "none";
+  });
 
   // Remove the active class from all dots
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+  Array.prototype.forEach.call(dots, function(dot) {
+    dot.className = dot.className.replace(" active", "");
+  });
 
   // Show the current slide and add the active class to the corresponding dot
   slides[slideIndex - 1].style.display = "block";
