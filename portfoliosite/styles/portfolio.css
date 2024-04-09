@@ -54,7 +54,7 @@ p {
 .logo {
   display: block;
   max-width: 175px;
-  margin: 0auto;
+  margin: 0 auto;
 }
 
 .logo-link {
